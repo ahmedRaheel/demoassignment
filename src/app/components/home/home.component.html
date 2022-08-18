@@ -1,0 +1,85 @@
+<div>
+  <mat-toolbar>
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+   
+   </mat-toolbar>
+  
+   <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="25%">
+        <mat-card class="mat-elevation-z4"  >
+          <mat-card-header>
+            <span class="example-spacer"></span>
+            <mat-icon [ngStyle]="{'color':'blue', 'font-size': '40px'}">shopping_cart</mat-icon>
+          </mat-card-header>
+          <mat-card-content>
+             <div style="font-size:18pt; margin-top: 100pt; font-weight: bold;">375</div>
+             <div style="font-size:14pt; margin-top: 10pt;">Total Orders</div>
+          </mat-card-content>
+          </mat-card> 
+     </div>
+     <div fxFlex="25%">
+      <mat-card class="mat-elevation-z4"  >
+        <mat-card-header>
+          <span class="example-spacer"></span>
+          <mat-icon [ngStyle]="{'color':'blue','font-size': '40px'}">account_balance_wallet</mat-icon>
+        </mat-card-header>
+        <mat-card-content>
+           <div style="font-size:18pt;  margin-top: 100pt;font-weight: bold;">267</div>
+           <div style="font-size:14pt; margin-top: 10pt">Total Expense</div>
+        </mat-card-content>
+        </mat-card> 
+   </div>
+   <div fxFlex="25%">
+    <mat-card class="mat-elevation-z4"  >
+      <mat-card-header>
+        <span class="example-spacer"></span>
+        <mat-icon [ngStyle]="{'color':'blue', 'font-size': '40px'}">assessment</mat-icon>
+      </mat-card-header>
+      <mat-card-content>
+         <div style="font-size:18pt; margin-top: 100pt; font-weight: bold;">375</div>
+         <div style="font-size:14pt; margin-top: 10pt">Orders</div>
+      </mat-card-content>
+      </mat-card> 
+ </div>
+ <div fxFlex="25%">
+  <mat-card class="mat-elevation-z4"  >
+    <mat-card-header>
+      <span class="example-spacer"></span>
+      <mat-icon [ngStyle]="{'color':'blue', 'font-size': '40px'}">people</mat-icon>
+    </mat-card-header>
+    <mat-card-content>
+       <div style="font-size:18pt; margin-top: 100pt; font-weight: bold;">375</div>
+       <div style="font-size:14pt; margin-top: 10pt">Total Users</div>
+    </mat-card-content>
+    </mat-card> 
+</div>
+    </div>
+   </div> 
+    
+</div>
+ <div>
+  <mat-toolbar>
+    <mat-icon>article</mat-icon>
+    <span>Recent Blogs</span>
+   
+   </mat-toolbar>
+  
+   <div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="20%" *ngFor="let item of blobList">
+        <mat-card class="mat-elevation-z4"  >
+          <mat-card-header>
+              <mat-card-title>{{item.title}}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            {{item.body}}
+          </mat-card-content>
+          </mat-card> 
+     </div>
+    </div>
+   </div> 
+    
+ </div>
+ 
