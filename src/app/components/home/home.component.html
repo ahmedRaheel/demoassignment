@@ -1,13 +1,13 @@
 <mat-card>
-  <mat-card-header>
+  <mat-card-title class="title">
     <mat-icon>home</mat-icon>
     <span>Home</span>
-  </mat-card-header>
- <mat-card-content>
+  </mat-card-title>
+ <mat-card-subtitle>
  <h4>
   Home page description
  </h4> 
- </mat-card-content>
+ </mat-card-subtitle>
 </mat-card>
   
 <div class="content">
@@ -64,27 +64,30 @@
 </div>    
 
  <mat-card>
-  <mat-card-header>
-    <mat-icon>article</mat-icon>
-    <span>Recent Blogs</span>
+  <mat-card-title class="title">
+    
+    <mat-icon>article</mat-icon>Recent Blogs
    
-   </mat-card-header>
+   </mat-card-title>
+  
   <mat-card-content>
     <div class="content">
       <div fxLayout="row wrap" fxLayoutGap="16px grid">
         <div fxFlex="20%" *ngFor="let item of blobList">
           <mat-card class="mat-elevation-z4"  >
-            <mat-card-header>
-                <mat-card-title>{{item.title}}</mat-card-title>
-            </mat-card-header>
+            <mat-card-title>
+              
+            </mat-card-title>
             <mat-card-content>
-              {{item.body}}
+              <b>{{item.title}}</b>
+              
+              <p style="margin-top:20px">{{item.body}}</p>
             </mat-card-content>
             </mat-card> 
        </div>
       </div>
      </div>    
   </mat-card-content>
-   
+ </mat-card>
 
  
